@@ -3,12 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="text-center bg-light py-4">
-      <h6>Welcome my chanel DevAT-VietNam</h6>
-      <a href="https://www.youtube.com/c/DevATHTML" 
-      target="_blank" rel="noreferrer"
-      className="mb-2 d-block">
-        https://www.youtube.com/c/DevATHTML
-      </a>
+      <h6>Chào mừng đến Law Blog. Trang Blog của ngành Luật</h6>
       <p> Copyright &copy; 2021</p>
     </div>
   )
