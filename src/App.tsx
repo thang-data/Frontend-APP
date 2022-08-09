@@ -18,7 +18,6 @@ import SocketClient from './SocketClient'
 
 import { API_URL } from './utils/config'
 
-
 const App = () => {
   const dispatch = useDispatch()
 
@@ -40,13 +39,11 @@ const App = () => {
       <Router>
         <Alert />
         <Header />
-
         <Switch>
           <Route exact path="/" component={PageRender} />
           <Route exact path="/:page" component={PageRender} />
           <Route exact path="/:page/:slug" component={PageRender} />
         </Switch>
-
         <Footer/>
       </Router>
     </div>
