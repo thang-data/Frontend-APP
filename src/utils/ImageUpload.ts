@@ -1,4 +1,3 @@
-import { updateUser } from "../redux/actions/userAction"
 
 export const checkImage = (file: File) => {
   const types = ['image/png', 'image/jpeg']
@@ -25,7 +24,6 @@ export const imageUpload = async (file: File) => {
     body: formData
   })
   const data = await res.json()
-  console.log(data)
   return { public_id: data.public_id, url: data.secure_url };
  
 }
