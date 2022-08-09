@@ -150,7 +150,7 @@ export const verifySMS = async (
       dispatch({ type: AUTH,payload: res.data })
 
       dispatch({ type: ALERT, payload: { success: res.data.msg } })
-      localStorage.setItem('logged', 'devat-channel')
+      localStorage.setItem('logged', 'Blog-Law')
     } catch (err: any) {
       dispatch({ type: ALERT, payload: { errors: err.response.data.msg } })
       setTimeout(() => {
