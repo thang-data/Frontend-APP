@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { RootStore, InputChange, IUserProfile, FormSubmit } from '../../utils/TypeScript'
@@ -6,6 +6,7 @@ import { RootStore, InputChange, IUserProfile, FormSubmit } from '../../utils/Ty
 import NotFound from '../global/NotFound'
 
 import { updateUser, resetPassword } from '../../redux/actions/userAction'
+import { getAPI } from '../../utils/FetchData'
 
 const UserInfo = () => {
   const initState = {
@@ -46,6 +47,7 @@ const UserInfo = () => {
       dispatch(resetPassword(password, cf_password, auth.access_token))
   }
 
+  
 
   const { name, avatar, password, cf_password } = user
 
