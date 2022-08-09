@@ -4,12 +4,12 @@ import { useSelector } from 'react-redux'
 
 import LoginPass from '../components/auth/LoginPass'
 import LoginSMS from '../components/auth/LoginSMS'
-import SocialLogin from '../components/auth/SocialLogin'
+// import SocialLogin from '../components/auth/SocialLogin'
 
 import { RootStore } from '../utils/TypeScript'
 
 const Login = () => {
-  const [sms, setSms] = useState(false)
+  const [sms] = useState(false)
   const history = useHistory()
 
   const { auth } = useSelector((state: RootStore) => state)
